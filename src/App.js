@@ -1,17 +1,17 @@
 import './App.css';
 import { useState } from 'react';
 
-const [counter, setCounter] = useState(0)
-const [counterIncrements, setCounterIncrements] = useState(1)
-const [maxium, setMaxium] = useState(100)
-const [minimum, setMinimum] = useState(0)
-
 function App() {
+  const [counter, setCounter] = useState(0)
+  const [counterIncrements, setCounterIncrements] = useState(1)
+  const [maxium, setMaxium] = useState(100)
+  const [minimum, setMinimum] = useState(0)
+
  return (
   <div className="App">
    <div className="innerContainer">
     <h1>Counter App</h1>
-    <p style={{textAlign:"center"}}>This is a counter application built by stackieusername, powered by React</p>
+    <p style={{textAlign:"center"}}>This is a counter application built by Retr0, powered by React</p>
     <input type="input" value={counter} onChange={(e)=>{setCounter(e.target.value)}}/>
     <div className="buttonContainer">
      <button onClick={()=>{
