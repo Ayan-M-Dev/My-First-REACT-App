@@ -1,6 +1,11 @@
 import './App.css';
 import { useState } from 'react';
- 
+
+const [counter, setCounter] = useState(0)
+const [counterIncrements, setCounterIncrements] = useState(1)
+const [maxium, setMaxium] = useState(100)
+const [minimum, setMinimum] = useState(0)
+
 function App() {
  return (
   <div className="App">
